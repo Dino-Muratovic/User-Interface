@@ -27,9 +27,16 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
+	
 }
 body {
 	line-height: 1;
+	max-width:880px;
+	margin: 0 auto; /*<---these two properties 
+	pushed Great Idea logo under nav bar so
+	 had to make other adjustments*/
+	
+	
 }
 ol, ul {
 	list-style: none;
@@ -69,16 +76,15 @@ h1, h2, h3, h4, h5 {
 
 /*Navigation bar*/
 
-nav {
-	display: block;
-	text-align: center;
+nav {	
+	text-align: center;	
 }
 
 .navigation-bar  {
 	display: inline-block;
 	height:3rem;
 	vertical-align: middle;	
-}
+	}
 
 
 .nav-logo {
@@ -88,11 +94,10 @@ nav {
 }
 
 .navigation-bar a {
-	margin:2.5rem;
+	margin:1rem;
 	position:relative;
 	top:25%;
 	text-decoration: none;
-	color:gray;	
 	
 }
 
