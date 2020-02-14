@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/*border: 0;*/
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -27,9 +27,16 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
+	
 }
 body {
 	line-height: 1;
+	max-width:880px;
+	margin: 0 auto; /*<---these two properties 
+	pushed Great Idea logo under nav bar so
+	 had to make other adjustments*/
+	
+	
 }
 ol, ul {
 	list-style: none;
@@ -49,12 +56,14 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+		
 }
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
+	
 }
 
 h1, h2, h3, h4, h5 {
@@ -64,3 +73,166 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+
+/*Navigation bar*/
+
+nav {	
+	text-align: center;	
+}
+
+.navigation-bar  {
+	display: inline-block;
+	height:3rem;
+	vertical-align: middle;	
+	}
+
+
+.nav-logo {
+	display: inline-block;	
+	margin-left:15%;
+	vertical-align: middle;
+}
+
+.navigation-bar a {
+	margin:1rem;
+	position:relative;
+	top:25%;
+	text-decoration: none;
+	
+}
+
+.navigation-bar a:hover {
+	color:black;
+	font-size:17px;
+}
+
+
+
+
+/*Header*/
+
+header {
+	display:block;
+	text-align: center;
+	width:100%;
+	margin:0 auto;
+	
+}
+
+.header-left-side{
+	display: inline-block;
+	vertical-align: middle;
+	width:38%;
+	
+}
+.header-left-side button{
+	margin-top:5%;
+	border:1px solid black;
+	padding:1%;
+	width:25%;
+	background-color:#fff;
+}
+
+.header-left-side button:hover{
+	animation-name:pulsebutton;
+  	animation-duration: 2s;
+}
+
+@keyframes pulsebutton {
+    30% {
+      transform: scale(0.75);
+      opacity: 0.8;
+    }
+  }
+
+.header-right-side {
+	display: inline-block;
+	margin:5%;		
+	vertical-align: middle;
+	position:relative;
+	left:5%;
+	
+}
+
+hr {
+	width:90%;
+	border: 1px solid black;
+}
+
+
+.header-right-side img {
+	width:80%;
+}
+
+header h1 {
+	font-size:60px;
+}
+
+
+/*Sections*/
+
+.section-one {
+	display:block;
+	text-align:center;
+	}
+
+.section-one div {
+	display:inline-block;
+	width:44%;
+	text-align: left;
+	padding:1em;
+}
+
+.section-two {
+	display: block;
+	text-align:center;
+		
+}
+
+
+
+.middle-img {
+	width:90%;
+	margin-top:5%;
+	
+}
+
+.section-three {
+	display: block;
+	text-align:center;
+	margin:5%;
+	
+}
+
+.section-three div {
+	display: inline-block;
+	width:32%;
+	text-align:left;
+	padding:1em;
+}
+
+section h3 {
+	font-size:22px;
+}
+
+/*Footer*/
+
+footer{
+	height:20%;
+	
+}
+
+footer div address p {
+	margin-left:5%;
+}
+
+footer .copyright {
+	text-align: center;
+	margin-top:2%;
+	margin-bottom:7%;
+}
+
+footer h3 {
+	margin-left:5%;
+	margin-top:5%;
+}
